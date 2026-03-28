@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* ===== COLOR SYSTEM ===== */
+:root {
+  --cream: #f5f1e6;
+  --beige: #e6dccf;
+  --mocha: #6f4e37;
+  --darkbrown: #4b2e2b;
+}
+
+/* ===== GLOBAL STYLING ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    var(--cream),
+    var(--beige)
+  );
+  color: var(--darkbrown);
+}
+
+/* ===== CUSTOM UTILITIES ===== */
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    var(--mocha),
+    var(--darkbrown)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
